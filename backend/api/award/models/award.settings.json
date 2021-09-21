@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "awards",
+  "info": {
+    "name": "award",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Winner": {
+      "type": "enumeration",
+      "enum": [
+        "team1",
+        "team2"
+      ],
+      "required": true
+    },
+    "event": {
+      "via": "award",
+      "model": "event"
+    }
+  }
+}

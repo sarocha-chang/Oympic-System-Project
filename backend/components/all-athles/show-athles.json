@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_all_athles_show_athles",
+  "info": {
+    "name": "ShowAthles",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pic": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "weight": {
+      "type": "integer",
+      "required": true
+    },
+    "height": {
+      "type": "integer"
+    },
+    "Sex": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ],
+      "required": true
+    }
+  }
+}

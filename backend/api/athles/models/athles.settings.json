@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "athles",
+  "info": {
+    "name": "athles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "team": {
+      "via": "athles",
+      "model": "team"
+    },
+    "ShowAthles": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all-athles.show-athles"
+    }
+  }
+}

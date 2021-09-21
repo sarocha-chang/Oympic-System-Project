@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_all_event_show_events",
+  "info": {
+    "name": "showEvent",
+    "icon": "book-open"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

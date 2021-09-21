@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "team",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "country": {
+      "type": "string",
+      "required": true
+    },
+    "athles": {
+      "via": "team",
+      "collection": "athles"
+    },
+    "events": {
+      "via": "teams",
+      "collection": "event"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "events",
+  "info": {
+    "name": "event",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sport": {
+      "via": "events",
+      "model": "sports"
+    },
+    "award": {
+      "model": "award",
+      "via": "event"
+    },
+    "teams": {
+      "via": "events",
+      "collection": "team",
+      "dominant": true
+    },
+    "showEvent": {
+      "type": "component",
+      "repeatable": false,
+      "component": "all-event.show-event"
+    }
+  }
+}
